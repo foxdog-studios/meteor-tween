@@ -1,9 +1,11 @@
 Package.describe({
-  summary: "Super simple, fast and easy to use tweening engine which incorporates optimised Robert Penner's equations."
+  summary: "Super simple, fast and easy to use tweening engine.",
+  version: "0.10.0_1",
+  git: "https://github.com/foxdog-studios/meteor-tween"
 });
 
-Package.on_use(function (api) {
-  api.add_files(['lib/Tween.js'], ['client']);
-  api.export('TWEEN');
+Package.onUse(function (api) {
+  api.addFiles("lib/Tween.js", "client");
+  api.export("TWEEN", "client");
 });
 
